@@ -1,0 +1,55 @@
+@import "variables";
+
+.cardPage {
+  .cardContainer {
+    background: linear-gradient(#F3E9DB, #777);
+    padding: @gutter 0 @halfGutter;
+    text-align: center;
+    img {
+      display: inline-block;
+      width: 240px;
+    }
+    h1 {
+      color: #fff;
+      margin: 0;
+      font-size: 32px;
+    }
+  }
+  .tableContainer {
+    padding: @halfGutter 0 @gutter * 3;
+    background: #F3E9DB;
+    text-align: center;
+    .btn {
+      margin-top: @halfGutter;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+  .table {
+    margin: 0 auto;
+    max-width: 400px;
+    tr {
+      &:nth-child(odd) {
+        td {
+          background: #BDC0C7;
+        }
+      }
+      &:nth-child(even) {
+        td {
+          background: #D8D8D8;
+        }
+      }
+    }
+    td {
+      font-size: 18px;
+      border: none;
+      width: 50%;
+      &:first-child {
+        text-align: right;
+      }
+      &:last-child {
+        text-align: left;
+      }
+    }
+  }
+}
